@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Game Store</title>
+<link rel="stylesheet" href="css/lightbox.css"/>
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link href="css/lightbox.css" rel="stylesheet" />
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/lightbox-2.6.min.js"></script>
+
+ <script>
+ $(document).ready(function() {
+   // Muestra y oculta los menús
+   $('ul li:has(ul)').hover(
+      function(e)
+      {
+         $(this).find('ul').css({display: "block"});
+      },
+      function(e)
+      {
+         $(this).find('ul').css({display: "none"});
+      }
+   );
+});
+</script>
+
+<body>
+<div class="uno">
+<table width="100%" align="center" cellpadding="0" id="fristtab">
+  <tr>
+    <td  id="dos">
+<table cellspacing="0" cellpadding="0">
+  						<tr>
+    					<td width="960" height="175"><img id="destacada" src="img/top.jpg"></td>
+  						</tr>
+  						<tr>
+    					<td height="110">
+                        
+    					  <table width="960" height="auto" border="0" cellpadding="0" cellspacing="0"  background="img/barnavi.jpg">
+                            <tr>
+                              <td width="308" height="110"></h1>
+                              &nbsp;<img src="img/log.png" width="280" height="80"></td>
+                              <td width="102" class="buttom" >
+                               <ul>
+                              <li class="menu"><a href="inicio.html">Inicio</a>                             </li>
+                              </ul></td>
+                              
+                              <td width="115" class="buttom" >
+                               <ul>
+                              <li class="menu"><a href="museo.html">Museo</a>                             </li>
+                              </ul></td>
+                              
+                              <td width="128" class="buttom" >
+                              <ul>
+                              <li class="menu"><a href="juegos.html">Juegos</a>
+                              <ul>
+            <li><a href="ps3.html">PS3</a></li>
+            <li><a href="nintendo.html">Nintendo</a></li>
+            <li><a href="xbox.html">XBOX</a></li>
+            				  </ul>
+                              </li>
+                              </ul>
+                              
+                              </td>
+                              
+                              <td width="171" class="buttom" >
+                               <ul>
+                              <li class="menu"><a href="contactenos.html">Contactenos</a>                             </li>
+                              </ul></td>
+                              
+                              
+                              <td width="136" class="buttom" >
+                               <ul>
+                              <li class="menu"><a href="javascript:buscar()">Buscador</a>                             </li>
+                              </ul></td>
+                                                          
+                            </tr>
+                          </table>
+                          
+                          </td>
+  						</tr>
+  						<tr>
+    					<td height="600" class="principal"><h1>COnTActENOs</h1>
+    					 <form name="frm">
+                         <div id="divAgregar">
+				<form id="frmAgregarContacto">
+					<fieldset>
+						<legend>datos de persona</legend>
+						<label for="txtNombre">Nombre:</label>
+						<input type="text" id="txtNombre" required autofocus><label class="error nombre">Ingrese un nombre v&aacute;lido</label>
+						<br>
+						<label for="txtTelefono">Telefono:</label>
+						<input type="text" id="txtTelefono" required autofocus><label class="error numero">Ingrese solo numeros</label>
+						<br>
+						<label for="txtDui">DUI:</label>
+						<input type="text" id="txtDui" required autofocus><label class="error numero">Ingrese solo numeros</label>
+						<br>
+						<input  id="validar" type="submit" value="Agregar">
+					</fieldset>
+				</form>
+			</div>
+			<div id="divLista">
+				<table width="100%" cellpadding="0" cellspacing="0" border="1" id="tblTablaContactos">
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>telefono</th>
+							<th>Dui</th>
+							<th>&nbsp;</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- el cuerpo de la tabla sera llenado con JavaScript -->
+					</tbody>
+				</table>
+			</div>
+                          <br>
+	</form>
+                          
+                          </td>
+  						</tr>
+	  </table>
+</td>
+  </tr>
+
+</table>
+</div>
+</body>
+</html>
